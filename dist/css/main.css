@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Ondo, sans-serif !important;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.homepage {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px !important;
+}
+
+/* From uiverse.io by @G4b413l */
+.pageloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  display: block;
+  z-index: 99999;
+}
+.pageloader .scanner h1 {
+  color: transparent;
+  font-size: 2.4rem;
+  position: fixed;
+  overflow: hidden;
+  top: 45%;
+  bottom: 50%;
+  left: 45% !important;
+  right: 55%;
+  width: 180px;
+  height: 100%;
+  z-index: 9999999999;
+}
+.pageloader .scanner h1::before {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 6%;
+  border-right: 4px solid #000;
+  overflow: hidden;
+  color: #000;
+  -webkit-animation: load91371 2s linear infinite;
+          animation: load91371 2s linear infinite;
+}
+@-webkit-keyframes load91371 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    border-right-color: transparent;
+  }
+  11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, 91% {
+    border-right-color: #000;
+  }
+  60%, 80% {
+    width: 100%;
+  }
+}
+@keyframes load91371 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    border-right-color: transparent;
+  }
+  11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, 91% {
+    border-right-color: #000;
+  }
+  60%, 80% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    z-index: 99999;
+  }
+  .scanner h1 {
+    color: transparent;
+    font-size: 1.6rem !important;
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    bottom: 50%;
+    left: 80% !important;
+    transform: translateX(-15%);
+    width: 124px !important;
+    height: 100%;
+    z-index: 9999999999;
+  }
+  .scanner h1::before {
+    content: "Loading...";
+    position: absolute;
+    width: 0;
+    height: 8%;
+    border-right: 4px solid #000;
+    overflow: hidden;
+    color: #000;
+    -webkit-animation: load91371 2s linear infinite;
+            animation: load91371 2s linear infinite;
+  }
+}
+.page-navbar .bg-dark {
+  color: #ffffff !important;
+  --bs-bg-opacity: 1;
+  background-color: #000 !important;
+}
+.page-navbar .page-navbar-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80% !important;
+}
+.page-navbar .nav-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px !important;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.page-navbar .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  filter: invert(100%) sepia(35%) saturate(59%) hue-rotate(107deg) brightness(112%) contrast(101%);
+}
+
+@media screen and (max-width: 991px) {
+  .page-navbar .navbar {
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+  }
+  .page-navbar .nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 20px 20px 0px !important;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+}
+@media screen and (max-width: 550px) {
+  .page-navbar .navbar {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+    padding-top: 10% !important;
+  }
+  .page-navbar .nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 20px 20px 0px !important;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+}
+@media screen and (min-width: 380px) {
+  .showcase-container {
+    padding-top: 100px;
+  }
+  .showcase-firstcard {
+    background: url(../assets/showcase.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .showcase-secondcard {
+    padding-top: 40px;
+    text-align: center;
+    background: #000;
+    color: #ffffff;
+    line-height: 30px;
+    width: 100vw !important;
+  }
+  .showcase-secondcard h3 {
+    font-size: 30px;
+  }
+  .showcase-secondcard p {
+    font-size: 25px;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .showcase-secondcard button {
+    background: #e63963;
+    width: 44vw;
+    padding: 10px 0;
+    margin: 5% auto;
+    border-radius: 20px;
+    display: block;
+  }
+  .showcase-secondcard .showtext {
+    color: #e63963;
+  }
+  .showtext2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+  }
+  .showcase-container2 {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    padding: 0 30px;
+  }
+  .showcase-container2 .showcase-thirdcard {
+    background: url(../assets//showcase2.png);
+    background-size: cover;
+    background-position: center;
+    width: 240px;
+    height: 100px;
+  }
+  .showcase-container2 .showcase-fourthcard {
+    background: url(../assets//showcase3.png);
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    height: 96px;
+  }
+  .showcase-container3 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    padding: 0 30px;
+  }
+  .showcase-container3 .showcase-fifthcard {
+    color: #ffffff;
+    text-align: center;
+    background: #000;
+  }
+  .showcase-container3 .showtext3 {
+    width: 60%;
+    font-size: 19.2px;
+    text-align: center;
+    margin: 7% auto;
+    font-weight: 600;
+  }
+  .showcase-container3 .showcase-sixthcard {
+    background: url(../assets//showcase5.png);
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 80%;
+    margin-top: 20%;
+    margin: 0 auto;
+  }
+  .showcase-container4 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+  }
+  .showcase-seventhcard {
+    background: #000;
+  }
+  .showcase-seventhcard p {
+    width: 60%;
+    margin: 10px auto;
+    line-height: 1.5rem;
+  }
+  .showtext5 {
+    font-size: 19.2px;
+    line-height: 1.5rem;
+    margin: 20px auto;
+    width: 50%;
+  }
+  .showcase-eightcard {
+    margin: 20px auto;
+    background: url(../assets//showcase4.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .showcase-secondcard {
+    padding-top: 40px;
+    text-align: center !important;
+    background: #000;
+    color: #ffffff;
+    line-height: 30px;
+    width: 100vw !important;
+  }
+  .showcase h3 {
+    font-size: 55px;
+  }
+  .showcase p {
+    font-size: 25px;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .showcase button {
+    background: #e63963;
+    width: 24vw;
+    padding: 10px 0;
+    margin: 5% auto;
+    border-radius: 20px;
+    display: block;
+  }
+  .showcase-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 20%;
+  }
+  .showcase .showtext2 {
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .showcase .showcase-container2 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    padding: 0 0px;
+    justify-content: space-between;
+  }
+  .showcase .showcase-container2 .showcase-thirdcard {
+    background: url(../assets//showcase2.png);
+    background-size: cover;
+    background-position: center;
+    width: 340px;
+    height: 200px;
+  }
+  .showcase .showcase-container2 .showcase-fourthcard {
+    background: url(../assets//showcase3.png);
+    background-size: cover;
+    background-position: center;
+    width: 320px;
+    height: 200px;
+  }
+  .showcase-container3 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    padding: 0 30px;
+  }
+  .showcase-container3 .showcase-fifthcard {
+    color: #ffffff;
+    text-align: center;
+    background: #000;
+  }
+  .showcase-container3 .showtext3 {
+    width: 60%;
+    font-size: 40px;
+    text-align: center;
+    margin: 7% auto;
+    font-weight: 600;
+  }
+  .showcase-container3 .showtext4 {
+    width: 90%;
+  }
+  .showcase-container3 .showcase-sixthcard {
+    background: url(../assets//showcase5.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 400px;
+    margin-top: 20% !important;
+    margin: 0 auto;
+  }
+  .showcase-container4 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15%;
+  }
+  .showcase-seventhcard {
+    background: #000;
+  }
+  .showcase-seventhcard p {
+    width: 45%;
+    margin: 10px auto;
+    line-height: 2.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center !important;
+  }
+  .showtext5 {
+    font-size: 40px !important;
+    line-height: 3.5rem;
+    margin: 20px auto;
+    width: 50%;
+    font-weight: 600;
+  }
+  .showcase-eightcard {
+    margin: 20px auto;
+    background: url(../assets//showcase4.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .showcase-container {
+    display: flex;
+    padding-top: 0px;
+  }
+  .showcase-firstcard {
+    order: 1;
+    height: 90vh;
+    width: 100vw;
+  }
+  .showcase-secondcard {
+    padding-top: 190px;
+    text-align: left !important;
+    background: #000;
+    color: #ffffff;
+    line-height: 30px;
+    width: 100vw !important;
+    padding-left: 5%;
+  }
+  .showcase p {
+    font-size: 25px;
+    max-width: 100%;
+    text-align: left;
+  }
+  .showcase-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0% !important;
+    width: 40vw;
+  }
+  .showcase button {
+    background: #e63963;
+    width: 25vw;
+    padding: 10px 0;
+    margin: 5% 18% 5% 0;
+    border-radius: 20px;
+    display: block;
+  }
+  .showcase-container2 {
+    width: 100vw;
+    height: 40vh !important;
+    display: flex;
+    padding: 0 200px !important;
+    justify-content: space-between;
+  }
+  .showcase-container2 .showcase-thirdcard {
+    background: url(../assets//showcase2.png);
+    background-size: cover;
+    background-position: center;
+    width: 340px;
+    height: 200px;
+  }
+  .showcase-container2 .showcase-fourthcard {
+    background: url(../assets//showcase3.png);
+    background-size: cover;
+    background-position: center;
+    width: 430px !important;
+    height: 210px !important;
+  }
+  .showcase-container3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0 40px;
+    margin: 0 5%;
+  }
+  .showcase-container3 .showcase-fifthcard {
+    color: #ffffff;
+    text-align: left;
+    background: #000;
+    width: 50%;
+    margin-top: 20%;
+  }
+  .showcase-container3 .showtext3 {
+    width: 70%;
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+  }
+  .showcase-container3 .showtext4 {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  .showcase-container3 .showcase-sixthcard {
+    background: url(../assets//showcase5.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 400px;
+    margin-top: 0% !important;
+    margin: 0 !important;
+  }
+  .showcase-container4 {
+    display: flex;
+    width: 100vw;
+  }
+  .showcase-container4 .showcase-seventhcard {
+    background: #000;
+    order: 1;
+    width: 100%;
+    margin: auto 0;
+  }
+  .showcase-container4 .showcase-seventhcard p {
+    width: 65%;
+    margin: 10px 0;
+    margin-left: 25%;
+    line-height: 2.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: right !important;
+  }
+  .showcase-container4 .showtext5 {
+    font-size: 40px !important;
+    line-height: 3.5rem;
+    margin: 20px 0;
+    margin-left: 40%;
+    width: 50%;
+    font-weight: 600;
+    text-align: right !important;
+  }
+  .showcase-container4 .showcase-eightcard {
+    margin: 20px 0;
+    margin-left: 5%;
+    background: url(../assets//showcase4.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .showcase-container2 {
+    margin: 0 auto;
+    width: 100vw;
+    height: 40vh !important;
+    display: flex;
+    align-items: center;
+  }
+  .showcase-container2 .showcase-thirdcard {
+    background: url(../assets//showcase2.png);
+    background-size: cover;
+    background-position: center;
+    width: 340px;
+    height: 200px;
+    padding-right: 40%;
+  }
+  .showcase-container2 .showcase-fourthcard {
+    background: url(../assets//showcase3.png);
+    background-size: cover;
+    background-position: center;
+    width: 330px !important;
+    height: 220px !important;
+    margin-right: 160px !important;
+  }
+  .showcase-container3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0 40px;
+    margin: 0 5%;
+  }
+  .showcase-container3 .showcase-fifthcard {
+    color: #ffffff;
+    text-align: left;
+    background: #000;
+    width: 50%;
+    margin-top: 20%;
+  }
+  .showcase-container3 .showtext3 {
+    width: 70%;
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+  }
+  .showcase-container3 .showtext4 {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  .showcase-container3 .showcase-sixthcard {
+    background: url(../assets//showcase5.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 470px;
+    margin-top: 0% !important;
+    margin: 0 !important;
+  }
+  .showcase-container4 {
+    display: flex;
+    width: 100vw;
+    margin-top: 5% !important;
+  }
+  .showcase-container4 .showcase-seventhcard {
+    background: #000;
+    order: 1;
+    width: 100%;
+    margin: auto 0;
+  }
+  .showcase-container4 .showcase-seventhcard p {
+    width: 60%;
+    margin: 10px 0;
+    margin-left: 15%;
+    line-height: 2.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: right !important;
+  }
+  .showcase-container4 .showtext5 {
+    font-size: 40px !important;
+    line-height: 3.5rem;
+    margin: 20px 0;
+    margin-left: 25%;
+    width: 50%;
+    font-weight: 600;
+    text-align: right !important;
+  }
+  .showcase-container4 .showcase-eightcard {
+    margin: 20px 0;
+    margin-left: 7%;
+    background: url(../assets//showcase4.png);
+    background-size: cover;
+    background-position: center;
+    max-height: 56%;
+    max-width: 30%;
+  }
+}
