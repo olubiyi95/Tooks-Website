@@ -3,7 +3,7 @@ import { Routes, Route} from "react-router-dom";
 import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
 import Contactpage from './pages/Contactpage';
-import Teamcontact from './pages/Teampage';
+import Teamcpage from './pages/Teampage';
 
 
 function App() {
@@ -30,7 +30,7 @@ const [loading, setLoading] = useState(false);
       <Route path='/' element={<Homepage/>} />
       <Route path='/about' element={<Aboutpage/>}/>
       <Route path='/contact' element={<Contactpage/>}/>
-      <Route path='/team' element={<Teamcontact/>}/>
+      <Route path='/team' element={<Teamcpage/>}/>
    </Routes>}
     </div>
   );

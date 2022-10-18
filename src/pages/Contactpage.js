@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Contactpage = () => {
   return (
-    <div>Contactpage</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 
