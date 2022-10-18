@@ -133,9 +133,11 @@ body{
             margin-left: auto;
             padding-right: 10%!important;
             padding-left: 10%!important;  
+            padding: 5% 10%!important ;
     
         }
         .bg-dark {
+          
             color: #ffffff!important;
             --bs-bg-opacity: 1;
             background-color: #000!important;
@@ -152,11 +154,15 @@ body{
             vertical-align: top;
             text-decoration: none;
             color: #ffffff;
-            padding: 20px!important;
+            padding: 20px 20px 20px 0!important;
             text-align: left;
             margin-left: auto;
             margin-right: auto;
             transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+            :hover {
+                color: #e63963;
+            }
         }
         .navbar-toggler-icon {
             display: inline-block;
@@ -211,7 +217,15 @@ body{
             margin-left: auto;
             margin-right: auto;
             transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+            
+          
         }
+    
+        .nav-link:hover {
+            border-bottom: 1px solid #fff;
+            padding-top: 0; 
+        }
+
         .navbar-toggler-icon {
             display: inline-block;
             width: 1.5em;
@@ -575,8 +589,8 @@ body{
                 margin-top: 12%;
 
                 button {
-                    height: 8vh;
-                    width: 30vh;
+                    height: 7vh;
+                    width: 22vh;
                     background: #000;
                     margin: 8% 0;
                     border-radius: 22px;
@@ -640,6 +654,11 @@ body{
         }
 
        
+
+        // CONTACTPAGE
+        .contactpage {
+            color: #ffffff;
+        }
     }
 }
 
