@@ -36,7 +36,7 @@ const Showcase = () => {
 
   useEffect(()=> {
     AOS.init();
-  })
+  });
   
   
  

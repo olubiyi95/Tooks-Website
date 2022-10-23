@@ -10,13 +10,13 @@ function App() {
 
 const [loading, setLoading] = useState(false);
 
-// useEffect(() => {
-//   setLoading(true);
-//    setTimeout(()=>{
-//     setLoading(false);
-//    }, 4000)
+useEffect(() => {
+  setLoading(true);
+   setTimeout(()=>{
+    setLoading(false);
+   }, 3000)
    
-// }, [])
+}, []);
 
   return (
     <div >
@@ -26,12 +26,13 @@ const [loading, setLoading] = useState(false);
             <h1></h1>
           </div>
         </div>
-      </div>:  <Routes>
+      </div> :
+        <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path='/about' element={<Aboutpage/>}/>
       <Route path='/contact' element={<Contactpage/>}/>
       <Route path='/team' element={<Teamcpage/>}/>
-   </Routes>}
+   </Routes> }
     </div>
   );
 }

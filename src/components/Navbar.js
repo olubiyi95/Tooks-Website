@@ -1,6 +1,6 @@
 import React from 'react';
-import {useEffect} from 'react';
 import { Link } from "react-router-dom";
+import image from '../assets/menu.svg'
 
 const Navbar = () => {
   return (
@@ -9,7 +9,8 @@ const Navbar = () => {
             <div className="container page-navbar-header px-0">
                 <Link className="navbar-brand" to="/"><h1 className='text-light'>Tooks</h1></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                {/* <span className="navbar-toggler-icon"></span> */}
+                <img  className ="navimage" src={image}></img>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
