@@ -6,13 +6,13 @@ import Footer from '../components/Footer';
 const Homepage = () => {
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-     setTimeout(()=>{
-      setLoading(false);
-     }, 3000)
+  // useEffect(() => {
+  //   setLoading(true);
+  //    setTimeout(()=>{
+  //     setLoading(false);
+  //    }, 3000)
      
-  }, []);
+  // }, []);
 
   useEffect(()=>{
     let element = document.querySelector('#homepage');
@@ -21,20 +21,14 @@ const Homepage = () => {
 
   return (
     <div className='homepage' id='homepage'>
-       {loading ? <div className='pageloader'>
-        <div className="loader">
-          <div className="scanner">
-            <h1></h1>
-          </div>
-        </div>
-      </div> :
+      
       <div>
           <Navbar/>
           <Showcase/>
          <Footer/>
       </div>
    
-      }
+      
       
     </div>
   )

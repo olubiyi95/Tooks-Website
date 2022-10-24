@@ -122,8 +122,12 @@ body{
 
 // NAVBAR
 @media screen and (min-width: 320px){
+    body {
+        overflow-x: hidden;
+    }
     .page-navbar {
         padding: 30px 0;
+        
 
         .navimage {
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
@@ -257,6 +261,9 @@ body{
 
 // SHOWCASE
 @media screen and (min-width: 320px){
+    body {
+        overflow-x: hidden;
+    }
 .showcase {
    
     &-container {
@@ -266,8 +273,8 @@ body{
         background: url(../assets/showcase.png);
         background-size: cover;
         background-position: center;
-        height: 100vh;
-        width: 100vw;
+        height: 80vh;
+        width: 100%!important;
     }
     &-secondcard {
         padding-top: 40px;
@@ -275,18 +282,18 @@ body{
         background: #000;
         color: #ffffff;
         line-height: 30px;
-        width: 100vw!important;
+        width: auto!important;
         h3{
-            font-size: 30px;
+            font-size: 40px;
         }
         p {
             font-size: 25px;
-            width: 70vw;
+            width: 80%;
             margin: 0 auto;
         }
         button {
             background: #e63963;
-            width: 44vw;
+            width: 50%;
             padding: 10px 0;
             margin: 5% auto;
             border-radius: 20px;
@@ -308,28 +315,29 @@ body{
 
     .showcase-container2{
         
-        width: 100vw;
-        height: 20vh;
+        // width: 100vw;
+        height: 40vh;
         display: flex;
         padding: 0 30px;
+        justify-content: space-evenly;
 
         .showcase-thirdcard {
             background: url(../assets//showcase2.png);
             background-size: cover;
             background-position: center;
             width: 240px;
-            height: 100px;
+            height: 140px;
         }
         .showcase-fourthcard {
             background: url(../assets//showcase3.png);
             background-size: cover;
             background-position: center;
-           width: 250px;
-           height: 105px;
+           width: 220px;
+           height: 115px;
         }
     }
     .showcase-container3{
-        width: 100vw;
+        width: auto;
         height: 100vh;
         display: block;
         padding: 0 30px;
@@ -340,11 +348,18 @@ body{
             background: #000;
         }
         .showtext3 {
-            width: 60%;
+            width: 50%;
             font-size: 19.2px;
             text-align: center;
             margin:7% auto;
             font-weight: 600;
+
+        }
+
+        .showtext4 {
+            font-size: 16px;
+            width: 70%;
+            margin: auto;
         }
         .showcase-sixthcard {
             background: url(../assets//showcase5.png);
@@ -399,7 +414,7 @@ body{
             color: #ffffff;
             text-align: center;
             p{
-                width: 100%;
+                width: 80%;
                 margin: 10px auto;
                 line-height: 1.5rem;
               
@@ -409,7 +424,7 @@ body{
             font-size: 19.2px;
             line-height: 1.5rem;
             margin: 20px auto;
-            width: 90%;
+            width: 70%;
         }
     }
     .showcase-tenthcard {
@@ -418,14 +433,14 @@ body{
         background-size: cover;
         background-position: center;
         height: 85%;
-        width: 90%;
+        width: 80%;
     }
 
     
     
     .showcase-container6 {
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         display: block;
         padding: 0 30px;
         margin-top: 25%;
@@ -457,13 +472,13 @@ body{
         background-size: cover;
         background-position: center;
         height: 45%;
-        width: 95%;
+        width: 90%;
     }
 
 
     .showcase-container7 {
-        margin-top: 15%;
-        width: 100vw;
+        margin-top: 45%!important;
+        width: 100%;
         height: 30vh;
         .showtext7 {
             font-size: 32px;
@@ -475,15 +490,16 @@ body{
         }
 
         .slider1 {
-            height: 17vh;
-            width: 120vw;
+            height: 14vh;
+            width: 90%!important;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
             background: #ffffff;
             align-items: center;
-            padding: 20px 20px 20px 20px;
+            padding: 10px 10px 10px 20px;
             border-radius: 100px;
+           
         }
         .overlay::before, .overlay::after {
             background: transparent;
@@ -503,42 +519,53 @@ body{
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 24vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .image{
-            width: 24vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 40vh;
-            padding-left: 6%;
+            width: 60%;
+            padding-left: 3%;
             font-weight: 400;
+           
+            p{
+                font-size: 14px!important;
+                width: 100%;
+            }
         }
       }
 
       .showcase-container8 {
         margin-top: 5%;
-        width: 100vw;
-        height: 50vh;
+        width: 100%;
+        height: 60vh;
         position: relative;
         
-       
+        .showtext7 {
+            font-size: 19.2px;
+            line-height: 1.5rem;
+            margin: 20px auto;
+            width: 50%;
+            color: #ffffff;
+            text-align: center;
+        }
 
         .slider1 {
-            height: 17vh;
-            width: 120vw;
+            height: 14vh;
+            width: 90%!important;
             border-radius: 20px;
             margin: 0 30px;
-            position: static;
-            
             display: flex;
             background: #ffffff;
             align-items: center;
-            padding: 20px 20px 20px 20px;
+            padding: 10px 10px 10px 20px;
             border-radius: 100px;
+           
         }
         .overlay::before, .overlay::after {
             background: transparent;
@@ -558,25 +585,30 @@ body{
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 24vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .image{
-            width: 24vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 40vh;
-            padding-left: 6%;
+            width: 60%;
+            padding-left: 3%;
             font-weight: 400;
+           
+            p{
+                font-size: 14px!important;
+                width: 100%;
+            }
         }
-      }
+        }
 
 
       .showcase-container9 {
-        width: 100vw;
+        width: auto;
 
         .showcase-thirteenthcard {
             background-color: #e63963;
@@ -602,7 +634,7 @@ body{
 
                 button {
                     height: 7vh;
-                    width: 22vh;
+                    width: 70%;
                     background: #000;
                     margin: 8% 0;
                     border-radius: 22px;
@@ -620,8 +652,8 @@ body{
     .footer-container {
         margin-top: 10%;
         background-image: linear-gradient(180deg, #444, #000);
-        width: 100vw;
-        height: 100vh;
+        width: auto;
+        height: 80vh;
         color: #ffffff;
 
         .footer-showcase {
@@ -638,11 +670,11 @@ body{
             li {
                 font-size: 14px;
                 font-weight: 400;
-                padding: 8% 0;
+                padding: 4% 4%;
             }
     }
     .footer-image1 img{
-      width: 28vw;
+      width: 24vw;
       margin: 10% 0 20%;
     }
 
@@ -653,7 +685,7 @@ body{
         font-size: 12px!important;
         font-weight: 400;
         padding: 8% 0;
-        width: 100vw;
+        width: 100%;
     }
     .icons {
         display: flex;
@@ -684,30 +716,33 @@ body{
 
             h1 {
                 font-size: 35px;
-                width: 48vw;
+                width: 48%;
                 margin: 0 auto;
             }
             p {
-                width: 65vw;
+                width: 65%;
                 margin: 5% auto;
             }
         }
         &-secondcard {
-           margin: 12% auto; 
+           margin: 12% auto!important; 
            position: relative;  
-           width: 70vw;
+           width: 100%;
+           justify-content: center;
+           display: block;
+        
 
 
            /* From uiverse.io by @alexruix */
 /* From uiverse.io by @alexruix */
 .input {
     color: #ffffff!important;
-    width: 70vw;
+    width: 100%;
     margin: 5% auto; 
     line-height: 28px;
     border: 2px solid transparent;
     // border-bottom-color: #fff;
-    padding: .2rem .8rem ;
+    padding: .4rem .8rem ;
     outline: none;
     background-color: #414141;
     color: #0d0c22;
@@ -733,12 +768,12 @@ body{
    .input2 {
     color: #ffffff!important;
     height: 15vh;
-    width: 70vw;;
+    width: 100%;
     margin: 5% auto; 
     line-height: 28px;
     border: 2px solid transparent;
     // border-bottom-color: #fff;
-    padding: .2rem .8rem ;
+    padding: .4rem .8rem ;
     outline: none;
     background-color: #414141;
     color: #0d0c22;
@@ -767,9 +802,9 @@ body{
           margin: 0 auto; 
           
             button {
-                width: 66vw;
+                width: 60%;
                 background: #e63963;
-                height: 8vh;
+                height: 6vh;
               text-align: center;
               margin: 0 auto;
                 display: block;
@@ -807,12 +842,12 @@ body{
             }
             h2{
                 font-size: 35px;
-                width: 60vw;
+                width: 60%;
                 margin: 0 auto;
             }
             button {
                 background: #e63963;
-                width: 60vw;
+                width: 60%;
                 height: 6vh;
                 margin: 5% 0;
                 border-radius: 30px;
@@ -889,7 +924,7 @@ body{
             button {
                 margin: 5% 0;
                 background: #e63963;
-                width: 45%;
+                width: 60%;
                 height: 6vh;
                 border-radius: 30px;
             }
@@ -1013,9 +1048,10 @@ body{
     }
 
     .aboutcard2 {
-width: 100%;
-margin: 7% auto;
-text-align: left;
+        width: 100%;
+        margin: 7% auto;
+        text-align: left;
+
         .aboutcard-image2 {
             width: 100%;
             border-radius: 30px;
@@ -1039,8 +1075,6 @@ text-align: left;
             }
             div {
                 padding: 0 5%;
-              
-
                 p{
                     width: 100%!important;
                 }
@@ -1064,6 +1098,10 @@ text-align: left;
 
 
 @media screen and (min-width: 768px){
+
+    body {
+        overflow-x: hidden!important;
+    }
     .showcase {
 
     &-secondcard {
@@ -1072,21 +1110,21 @@ text-align: left;
             background: #000;
             color: #ffffff;
             line-height: 30px;
-           width: 100vw!important;
+           width: auto!important;
         }
         h3{
             font-size: 55px;
         }
         p {
             font-size: 25px;
-            width: 70vw;
+            width: 70%;
             margin: 0 auto;
         }
         button {
             background: #e63963;
-            width: 24vw;
+            width: 60%;
             padding: 10px 0;
-            margin: 5% auto;
+            margin: 5% 2%;
             border-radius: 20px;
             display: block;
         }
@@ -1108,7 +1146,7 @@ text-align: left;
         }
 
         .showcase-container2{
-            width: 100vw;
+            width: auto;
             height: 50vh;
             display: flex;
             padding: 0 0px;
@@ -1131,7 +1169,7 @@ text-align: left;
         }
     }
     .showcase-container3{
-        width: 100vw;
+        width: auto;
         // height: 100vh;
         display: block;
         padding: 0 30px;
@@ -1142,7 +1180,7 @@ text-align: left;
             background: #000;
         }
         .showtext3 {
-            width: 60%;
+            width: 70%;
             font-size: 40px;
             text-align: center;
             margin:7% auto;
@@ -1150,14 +1188,15 @@ text-align: left;
         }
 
         .showtext4 {
-            width: 90%;
+            width: 70%;
+            font-size: 16px;
         }
         .showcase-sixthcard {
             background: url(../assets//showcase5.png);
             background-size: cover;
             background-position: center;
             height: 100%;
-            width: 400px;
+            width: 50%;
             margin-top: 20%!important;
             margin: 0 auto;
             
@@ -1172,7 +1211,7 @@ text-align: left;
         background: #000;
 
         p{
-            width: 45%;
+            width: 60%;
             margin: 10px auto;
             line-height: 2.5rem;
             font-size: 25px;
@@ -1191,7 +1230,7 @@ text-align: left;
 
 
     .showcase-eightcard {
-        margin: 20px auto;
+        margin: 40px auto;
         background: url(../assets//showcase4.png);
         background-size: cover;
         background-position: center;
@@ -1231,7 +1270,7 @@ text-align: left;
         background-size: cover;
         background-position: center;
         height: 100vh;
-        width: 60%;
+        width: 55%;
     }
 
     
@@ -1270,14 +1309,14 @@ text-align: left;
         background-size: cover;
         background-position: center;
         height: 70vh;
-        width: 80%;
+        width: 60%;
     }
 
 
 
     .showcase-container7 {
         margin-top: 65%!important;
-        width: 100vw;
+        width: 100%!important;
         height: 30vh;
         .showtext7 {
             font-size: 32px;
@@ -1290,7 +1329,7 @@ text-align: left;
 
         .slider1 {
             height: 15vh;
-            width: 52vw;
+            width: 100%!important;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -1318,30 +1357,30 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 12vw;
+            width: 120px;
             height: 12vh;
             border-radius: 50%;
         }
         .image{
-            width: 12vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
-            padding-left: 6%;
+            width: 60%;
+            padding-left: 2%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 30vh;
+                width: 100%;
             }
         }
       }
 
       .showcase-container8 {
         margin-top: 5%;
-        width: 100vw;
+        width: 100%;
         height: 50vh;
         position: relative;
         
@@ -1355,8 +1394,8 @@ text-align: left;
         }
 
         .slider1 {
-            height: 15vh;
-            width: 52vw;
+            height: 15vh!important;
+            width: 100%!important;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -1384,23 +1423,23 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 12vw;
+            width: 120px;
             height: 12vh;
             border-radius: 50%;
         }
         .image{
-            width: 12vw;
+            width: 100px;
             height: 12vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
-            padding-left: 6%;
+            width: 30vw;
+            padding-left: 2%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 30vh;
+                width: 100%;
             }
         }
         }
@@ -1408,11 +1447,11 @@ text-align: left;
 
 
         .showcase-container9 {
-            width: 100vw;
+        
     
             .showcase-thirteenthcard {
                 background-color: #e63963;
-                width: 55vw;
+                width: 55%;
                 height: 90vh;
                 border-radius: 30px;
                 margin: 0 auto;
@@ -1445,7 +1484,7 @@ text-align: left;
     
                     button {
                         height: 8vh;
-                        width: 30vh;
+                        width: 60%;
                         background: #000;
                         margin: 8% auto;
                         border-radius: 22px;
@@ -1488,7 +1527,7 @@ text-align: left;
                 }
         }
         .footer-image1 img{
-          width: 10vw!important;
+          width: 60%!important;
           height: 5vh;
           margin: 10% 0 20% 0;
           padding-left: 0;
@@ -1524,11 +1563,11 @@ text-align: left;
 
             h1 {
                 font-size: 35px;
-                width: 48vw;
+                width: 48%;
                 margin: 0 auto;
             }
             p {
-                width: 65vw;
+                width: 65%;
                 margin: 5% auto;
             }
         }
@@ -1543,12 +1582,12 @@ text-align: left;
 /* From uiverse.io by @alexruix */
 .input {
     color: #ffffff!important;
-    width: 70vw;
+    width: 100%;
     margin: 5% auto; 
     line-height: 28px;
     border: 2px solid transparent;
     // border-bottom-color: #fff;
-    padding: .2rem .8rem ;
+    padding: .4rem .8rem ;
     outline: none;
     background-color: #414141;
     color: #0d0c22;
@@ -1574,12 +1613,12 @@ text-align: left;
    .input2 {
     color: #ffffff!important;
     height: 15vh;
-    width: 70vw;;
+    width: 100%;
     margin: 5% auto; 
     line-height: 28px;
     border: 2px solid transparent;
     // border-bottom-color: #fff;
-    padding: .2rem .8rem ;
+    padding: .4rem .8rem ;
     outline: none;
     background-color: #414141;
     color: #0d0c22;
@@ -1608,7 +1647,7 @@ text-align: left;
           margin: 0 auto; 
           
             button {
-                width: 66vw;
+                width: 80%;
                 background: #e63963;
                 height: 8vh;
               text-align: center;
@@ -1647,12 +1686,12 @@ text-align: left;
             }
             h2{
                 font-size: 55px;
-                width: 60vw;
+                width: 60%;
                 margin: 0 auto;
             }
             button {
                 background: #e63963;
-                width: 30vw;
+                width: 40%;
                 height: 7vh;
                 margin: 5% 0;
                 border-radius: 30px;
@@ -1731,7 +1770,7 @@ text-align: left;
             }
             .team-p2 {
                 font-size: 55px;
-                width: 40%;
+                width: 60%;
                 margin: 5% auto;
                 line-height: 60px;
             
@@ -1740,7 +1779,7 @@ text-align: left;
             button {
                 margin: 5% 0;
                 background: #e63963;
-                width: 25%;
+                width: 40%;
                 height: 6vh;
                 border-radius: 30px;
                 display: block;
@@ -1861,9 +1900,9 @@ text-align: left;
         }
     
         .aboutcard2 {
-    width: 65%;
-    margin: 7% auto;
-    text-align: left;
+            width: 65%;
+            margin: 7% auto;
+            text-align: left;
             .aboutcard-image2 {
                 width: 90%;
                 border-radius: 30px;
@@ -1910,6 +1949,9 @@ text-align: left;
 
 
 @media screen and (min-width: 1024px){
+    body {
+        overflow-x: hidden!important;
+    }
     .showcase {
         &-container{
             display: flex;
@@ -1918,7 +1960,7 @@ text-align: left;
         &-firstcard {
             order: 1;
             height: 90vh;
-            width: 100vw;
+            width: 100%!important;
             margin-top: 10%;
         }
         &-secondcard {
@@ -1927,12 +1969,12 @@ text-align: left;
             background: #000;
             color: #ffffff;
             line-height: 30px;
-            width: 100vw!important;
+            width: 100%!important;
            padding-left: 5%;
         }
         p {
             font-size: 25px;
-            max-width: 100%;
+            width: 100%;
             text-align: left;
         }
         &-button {
@@ -1940,11 +1982,11 @@ text-align: left;
             justify-content: space-between;
             align-items: center; 
             margin: 5% 0%!important;
-            width: 40vw;
+            width: 100%;
         }
         button {
             background: #e63963;
-            width: 25vw;
+            width: 60%!important;
             padding: 10px 0;
             margin: 5% 18% 5% 0 ;
             border-radius: 20px;
@@ -1952,7 +1994,7 @@ text-align: left;
         }
     }
     .showcase-container2{
-        width: 100vw;
+        width: 100%;
         height: 40vh!important;
         display: flex;
         padding: 0 200px!important;
@@ -1974,7 +2016,7 @@ text-align: left;
         }
     }
     .showcase-container3{
-        width: 100vw;
+        width: 100%!important;
         height: 100vh;
         display: flex;
         padding: 0 40px;
@@ -1988,7 +2030,7 @@ text-align: left;
             margin-top: 20%;
         }
         .showtext3 {
-            width: 70%;
+            width: 50%!important;
             font-size: 40px;
             text-align: left;
             margin:0;
@@ -1997,9 +2039,10 @@ text-align: left;
         }
 
         .showtext4 {
-            width: 80%;
+            width: 60%!important;
             margin-left: 0;
             margin-top: 3%;
+            font-size: 16px;
         }
         .showcase-sixthcard {
             background: url(../assets//showcase5.png);
@@ -2016,7 +2059,7 @@ text-align: left;
 
     .showcase-container4{
         display: flex;
-       width: 100vw;
+       width: 100%;
        margin-top: 10%;
 
         .showcase-seventhcard {
@@ -2063,7 +2106,7 @@ text-align: left;
 
 
     .showcase-container5 {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         padding: 0 30px;
@@ -2102,13 +2145,13 @@ text-align: left;
         background-size: cover;
         background-position: center;
         height: 90vh;
-         width: 85%;
+         width: 80%;
     }
 
 
 
     .showcase-container6 {
-        width: 100vw;
+        width: 100%;
         height: 80vh;
         display: flex;
         padding: 0 30px;
@@ -2156,7 +2199,7 @@ text-align: left;
 
     .showcase-container7 {
         margin-top: 0%!important;
-        width: 100vw;
+        width: 100%;
         height: 25vh;
         .showtext7 {
             font-size: 32px;
@@ -2169,7 +2212,7 @@ text-align: left;
 
         .slider1 {
             height: 12vh;
-            width: 42vw;
+            width: 100%!important;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -2197,23 +2240,23 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 8vw;
-            height: 8vh;
+            width: 100px;
+            height: 9vh;
             border-radius: 50%;
         }
         .image{
-            width: 8vw;
-            height: 8vh;
+            width: 100px;
+            height: 9vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
+            width: 90%;
             padding-left: 6%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 30vh;
+                width: 100%;
             }
         }
       }
@@ -2234,8 +2277,8 @@ text-align: left;
         }
 
         .slider1 {
-            height: 12vh;
-            width: 42vw;
+            height: 12vh!important;
+            width: 100%!important;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -2263,23 +2306,23 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 8vw;
-            height: 8vh;
+            width: 100px;
+            height: 9vh;
             border-radius: 50%;
         }
         .image{
-            width: 8vw;
-            height: 8vh;
+            width: 100px;
+            height: 9vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
+            width: 90%;
             padding-left: 6%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 30vh;
+                width: 100%;
             }
         }
       }
@@ -2364,16 +2407,16 @@ text-align: left;
         }
         &-firstcard {
             text-align: left;
-            width: 30vw;
+            width: 100%;
             align-items: center;
             margin-top: 20%;
             h1 {
                 font-size: 55px;
-                width: 38vw;
+                width: 100%;
                 margin: 0 auto;
             }
             p {
-                width: 35vw;
+                width: 105%;
                 margin: 5% auto;
                 font-size: 25px;
                
@@ -2383,6 +2426,7 @@ text-align: left;
            margin: 12% auto; 
            position: relative;      
            display: block;
+           width: 100%!important;
 
 
            /* From uiverse.io by @alexruix */
@@ -2390,7 +2434,7 @@ text-align: left;
 .input {
     display: block;
     color: #ffffff!important;
-    width: 50vw;
+    width: 100%;
     margin: 5% auto 5% 1%;
     line-height: 28px;
     border: 2px solid transparent;
@@ -2421,7 +2465,7 @@ text-align: left;
    .input2 {
     display: block;
     color: #ffffff!important;
-    width: 50vw;
+    width: 100%;
     margin: 5% auto 5% 1%; 
     line-height: 28px;
     // border-bottom-color: #fff;
@@ -2454,7 +2498,7 @@ text-align: left;
           margin: 0 auto; 
           
             button {
-                width: 40vw;
+                width: 100%;
                 background: #e63963;
                 height: 6vh!important;
               text-align: center;
@@ -2494,12 +2538,13 @@ text-align: left;
             }
             h2{
                 font-size: 45px;
-                width: 30vw;
+                width: 90%;
                 margin: 0 auto;
+                text-align: center;
             }
             button {
                 background: #e63963;
-                width: 20vw;
+                width: 70%;
                 height: 6vh;
                 margin: 5% 0;
                 border-radius: 30px;
@@ -2745,10 +2790,12 @@ text-align: left;
 
 
 @media screen and (min-width: 1200px){
-    
+    body {
+        overflow-x: hidden!important;
+    }
     .showcase-container2{
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
         height: 40vh!important;
         display: flex;
         align-items: center;
@@ -2772,7 +2819,7 @@ text-align: left;
     }
     
     .showcase-container3{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         padding: 0 40px;
@@ -2803,8 +2850,8 @@ text-align: left;
             background: url(../assets//showcase5.png);
             background-size: cover;
             background-position: center;
-            height: 100%;
-            width: 470px;
+            height: 100vh;
+            width: 30%;
             margin-top: 0%!important;
             margin: 0!important;
         
@@ -2813,14 +2860,15 @@ text-align: left;
     
     .showcase-container4{
         display: flex;
-       width: 100vw;
+       width: 100%;
        margin-top: 5%!important;
 
         .showcase-seventhcard {
             background: #000;
             order: 1;
             width: 100%;
-            margin: auto 0;
+            margin: auto ;
+            text-align: right;
     
             p{
                 width: 60%;
@@ -2851,13 +2899,13 @@ text-align: left;
             background: url(../assets//showcase4.png);
             background-size: cover;
             background-position: center;
-            max-height: 56%;
-            max-width: 30%;
+            height: 100vh;
+            width: 40%;
         }
     }
 
     .showcase-container5 {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         padding: 0 30px;
@@ -2959,7 +3007,7 @@ text-align: left;
 
     .showcase-container7 {
         margin-top: 0%!important;
-        width: 100vw;
+        width: 100%;
         height: 25vh;
         .showtext7 {
             font-size: 32px;
@@ -2972,7 +3020,7 @@ text-align: left;
 
         .slider1 {
             height: 11vh;
-            width: 25vw;
+            width: 100%;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -3000,23 +3048,23 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 9vw;
+            width: 100px;
             height: 9vh;
             border-radius: 50%;
         }
         .image{
-            width: 9vw;
+            width: 100px;
             height: 9vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
+            width: 90%;
             padding-left: 6%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 30vh;
+                width: 100%;
             }
         }
       }
@@ -3038,7 +3086,7 @@ text-align: left;
 
         .slider1 {
             height: 11vh;
-            width: 25vw;
+            width: 100%;
             border-radius: 20px;
             margin: 0 30px;
             display: flex;
@@ -3066,23 +3114,23 @@ text-align: left;
             // background: url(../assets//slider1.jpeg);
             background-position: center;
             background-size: cover;
-            width: 9vw;
+            width: 100px;
             height: 9vh;
             border-radius: 50%;
         }
         .image{
-            width: 9vw;
+            width: 100px;
             height: 9vh;
             border-radius: 50%;
         }
         .wordslider {
-            width: 30vh;
+            width: 90%;
             padding-left: 6%;
             font-weight: 400;
            
             p{
                 font-size: 14px!important;
-                width: 35vw;
+                width: 100%;
             }
         }
       }
@@ -3155,7 +3203,7 @@ text-align: left;
       .footer-container {
         margin-top: 10%;
         background-image: linear-gradient(180deg, #444, #000);
-        width: 100vw;
+        width: 100%;
         height: 80vh;
         color: #ffffff;
 
@@ -3180,7 +3228,7 @@ text-align: left;
             }
     }
     .footer-image1 img{
-      width: 10vw!important;
+      width: 40%!important;
       height: 5vh;
       margin: 10% 0 20% 0;
       padding-left: 0;
@@ -3192,15 +3240,15 @@ text-align: left;
         font-size: 12px!important;
         font-weight: 400;
         padding: 8% 0;
-        width: 100vw;
+        width: 100%;
     }
 
     .footericons {
-        width: 3vh;
+        width: 10%;
     }
 
     .iconsizes {
-        width: 20vw;
+        width: 20%;
     }
 
 
@@ -3213,16 +3261,16 @@ text-align: left;
 
         &-firstcard {
             text-align: left;
-            width: 30vw;
+            width: 80%;
             align-items: center;
             margin-top: 20%;
             h1 {
                 font-size: 55px;
-                width: 38vw;
+                width: 100%;
                 margin: 0 auto;
             }
             p {
-                width: 35vw;
+                width: 100%;
                 margin: 5% auto;
                 font-size: 25px;
                
@@ -3232,14 +3280,14 @@ text-align: left;
            margin: 12% auto; 
            position: relative;      
            display: block;
-
+            width: 100%;
 
            /* From uiverse.io by @alexruix */
 /* From uiverse.io by @alexruix */
 .input {
     display: block;
     color: #ffffff!important;
-    width: 40vw;
+    width: 100%;
     margin: 5% auto 5% 1%;
     line-height: 28px;
     border: 2px solid transparent;
@@ -3270,7 +3318,7 @@ text-align: left;
    .input2 {
     display: block;
     color: #ffffff!important;
-    width: 40vw;
+    width: 100%;
     margin: 5% auto 5% 1%; 
     line-height: 28px;
     // border-bottom-color: #fff;
@@ -3303,7 +3351,7 @@ text-align: left;
           margin: 0 auto; 
           
             button {
-                width: 40vw;
+                width: 100%;
                 background: #e63963;
                 height: 8vh;
               text-align: center;
@@ -3341,12 +3389,12 @@ text-align: left;
             }
             h2{
                 font-size: 55px;
-                width: 30vw;
+                width: 90%;
                 margin: 0 auto;
             }
             button {
                 background: #e63963;
-                width: 15vw;
+                width: 60%;
                 height: 6vh;
                 margin: 5% 0;
                 border-radius: 30px;
@@ -3445,7 +3493,7 @@ color: #ffffff;
     }
 
     .aboutcard {
-width: 90%;
+        width: 90%;
         .aboutcard-image1 {
             width: 60%;
             border-radius: 30px;
@@ -3485,7 +3533,7 @@ width: 90%;
     
 
         h3 {
-     
+            text-align: left;
             color: #757575;
             font-size: 35px;
             padding-bottom: 6%!important;
@@ -3510,8 +3558,8 @@ width: 90%;
     }
 
     .aboutcard2 {
-width: 100%;
-margin: 7% 0;
+        width: 100%;
+        margin: 7% 0;
         .aboutcard-image2 {
             width: 90%;
             border-radius: 30px;
