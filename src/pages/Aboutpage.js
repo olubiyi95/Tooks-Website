@@ -9,10 +9,7 @@ const Aboutpage = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-     setTimeout(()=>{
-      setLoading(false);
-     }, 4000)
+    effectloader()
      
   }, []);
 
@@ -21,6 +18,12 @@ const Aboutpage = () => {
     element.scrollIntoView({ behavior: "smooth"});
 }, []);
 
+const effectloader = ( )=> {
+  setLoading(true);
+  setTimeout(()=>{
+   setLoading(false);
+  }, 4000)
+}
 
   return (
     <div id='aboutpage'>

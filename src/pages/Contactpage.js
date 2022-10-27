@@ -9,10 +9,7 @@ const Contactpage = () => {
   const [loading, setLoading] = useState(false);
 
 useEffect(() => {
-  setLoading(true);
-   setTimeout(()=>{
-    setLoading(false);
-   }, 4000)
+  effectloader()
    
 }, []);
 
@@ -20,6 +17,13 @@ useEffect(() => {
     let element = document.querySelector('#contact');
     element.scrollIntoView({ behavior: "smooth"});
 }, []);
+
+const effectloader = ( )=> {
+  setLoading(true);
+  setTimeout(()=>{
+   setLoading(false);
+  }, 4000)
+}
 
   return (
     <div id='contact'>
