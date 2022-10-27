@@ -8,31 +8,17 @@ import Teamcpage from './pages/Teampage';
 
 function App() {
 
-const [loading, setLoading] = useState(false);
 
-useEffect(() => {
-  setLoading(true);
-   setTimeout(()=>{
-    setLoading(false);
-   }, 4000)
-   
-}, []);
 
   return (
     <div >
-     {loading ? <div className='pageloader'>
-        <div className="loader">
-          <div className="scanner">
-            <h1></h1>
-          </div>
-        </div>
-      </div> :
+   
         <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path='/about' element={<Aboutpage/>}/>
       <Route path='/contact' element={<Contactpage/>}/>
       <Route path='/team' element={<Teamcpage/>}/>
-   </Routes> }
+   </Routes> 
     </div>
   );
 }
