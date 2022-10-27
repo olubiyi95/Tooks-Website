@@ -11,7 +11,7 @@ const Teampage = () => {
     setLoading(true);
      setTimeout(()=>{
       setLoading(false);
-     }, 3000)
+     }, 4000)
      
   }, []);
 
